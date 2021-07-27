@@ -52,7 +52,7 @@ def get_user_course():
     if gl_timeStamp == "":
         print("请先登录再进行操作")
         return
-    # TODO 此处应该可以再次细分函数
+    # 此处应该可以再次细分函数
     url = "http://www.hzsapw.com/v3/api/orderproduct/GetList"
     # GET方法提交数据，字典形式，此处有更专业的方法待改进
     response = requests.get(url, cookies=gl_cookies)
